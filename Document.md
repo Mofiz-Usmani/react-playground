@@ -85,3 +85,35 @@ const element = <h1>Hello React</h1>;
 
 ---
 
+---
+
+## Git Commands to Push 
+
+Use the following commands to push your React playground code to GitHub:
+
+```bash
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin https://github.com/Mofiz-Usmani/react-playground.git
+git branch -M main
+git push -u origin main
+```
+
+---
+
+## If You Get Error During `git push`
+
+If `git push -u origin main` gives an error (like rejected or non-fast-forward), run:
+
+```bash
+git pull --rebase origin main
+git push -u origin main
+```
+
+---
+
+
+
+
+## 
