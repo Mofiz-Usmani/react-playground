@@ -119,8 +119,3 @@ git push -u origin main
 ## File Setup
 
 ```Enter command npm create vite@lates name it react-playground then select react then js now stop the server by ctrl + c then cd to react-playground then enter npm run dev to start the server
-
-
-
-
-##
