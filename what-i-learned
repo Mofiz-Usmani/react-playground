@@ -1,0 +1,22 @@
+02-components:
+
+Now, in our main folder which is reactjs where react-playground1 file is made so lets make another file by writing npm create vite@latest  then react-playground2 as project name then same procedure as react-playground1 
+
+So, in this first we will learn about react Components more info about react components and why it is used is in react-playground2.md file 
+
+Now, in this folder react-playground2 create a folder components in src foler and in that create a file Card.jsx and in that write a funciton Card and return h1 with class name and modify it in index.css and in App.jsx import the card.jsx then use it to show the card.
+
+Now, create a file Navbar.jsx and in that write a function and then modify its css then import it into app.jsx 
+
+
+
+
+03-props:
+
+      <Navbar />
+Now, create a folder 03-props using npm create vite@latest then 
+
+
+
+
+
