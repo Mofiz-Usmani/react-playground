@@ -12,19 +12,26 @@ html,body {
 
 
 .parent {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  background-color: black;
-  padding: 30px;
+  background-color: rgb(239, 235, 228);
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 
 .card {
-  height: 300px;
-  width: 250px;
+  height: 350px;
+  width: 290px;
   background-color: #fff;
   border-radius: 30px;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -37,8 +44,8 @@ html,body {
 
 
 .top img {
-  height: 33px;
-  width: 33px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   border: 1px solid #dadada;
   padding: 3px;
@@ -58,14 +65,98 @@ html,body {
 
 
 .center {
-  background-color: red;
+  /* background-color: red; */
 }
 
+
+.center h3 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+
+.center h3 span {
+  font-size: 11px;
+  font-weight: 400;
+  color: #8b8b8b;
+  /* padding-top: 10px; */
+}
+
+
+.center h2 {
+  font-size: 20px;
+}
+
+
+.center .tag {
+  display: flex;
+  margin-top: 8px;
+  gap: 5px;
+}
+
+
+.center .tag h4 {
+  font-size: 12px;
+  background-color: #e9e8e8;
+  color: black;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
 
 .bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #b1b1b1;
-  padding: 10px 0;
+  border-top: 2px solid #dcdcdc;
+  padding-top: 15px;
+}
+
+
+.bottom h3 {
+  font-weight: 550;
+}
+
+
+.bottom p {
+  font-size: 12px;
+  color: #b1b1b1;
+  padding-top: 3px;
+}
+
+
+
+.bottom button {
+  height: 30px;
+  width: 100px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+
+
+
+.parent2 {
+  margin: 10px;
+}
+
+
+
+.card2 {
+  height: 400px;
+  width: 300px;
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+
+.top2 img {
+  height: 250px;
+  width: 300px;
+  border-radius: 30px;
+  padding: 5px;
 }
