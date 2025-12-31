@@ -13,8 +13,10 @@ Now, create a file Navbar.jsx and in that write a function and then modify its c
 
 03-props:
 
-      <Navbar />
-Now, create a folder 03-props using npm create vite@latest then 
+
+Now, create a folder 03-props using npm create vite@latest then in app.jsx create a parent div and in that use Card for which first create a folder components in src folder and in that create a file Card.jsx and in it write a card function and return a card div with card things and then import it in app.jsx so this is not dynamic for making the card component reusable and dynamic we use props for that in app.jsx in Card tag add name image description then in card.jsx in card function argument add name image descripiton then use it in className card div so like this we can create multiple cards with diff data.
+
+
 
 
 
