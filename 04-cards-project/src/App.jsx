@@ -1,5 +1,6 @@
 import Card from './components/Card'
 import ProductCard from './components/ProductCard';
+import { products } from './data/products';
 
 const App = () => {
 
@@ -120,10 +121,21 @@ const App = () => {
 //         </div>
 //       })}
 //     </div>
-//   )
+  // )
 
 return <div className='parent2'>
-  <ProductCard />
+  {products.map(function(el, idx) {
+    return <div>
+      <ProductCard 
+      image={el.image}
+      title={el.title}
+      category={el.category}
+      rating={el.rating}
+      stock={el.stock}
+      price={el.price}
+      />
+    </div>
+  })}
 </div>
 }
 

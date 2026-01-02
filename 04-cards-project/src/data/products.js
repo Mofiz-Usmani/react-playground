@@ -1,0 +1,56 @@
+export const products = [
+  {
+    id: 1,
+    image: "https://i.pinimg.com/736x/b5/3b/fd/b53bfd5edf93be1173b19b1d7b452549.jpg",
+    title: "Wireless Headphones",
+    category: "Electronics",
+    price: 2999,
+    rating: 4.5,
+    stock: "In Stock"
+  },
+  {
+    id: 2,
+    image: "https://i.pinimg.com/1200x/61/a5/f2/61a5f23c8bc4d467aa24104b4db3cab2.jpg",
+    title: "Running Shoes",
+    category: "Fashion",
+    price: 1999,
+    rating: 4.1,
+    stock: "In Stock"
+  },
+   {
+    id: 3,
+    image: "https://i.pinimg.com/736x/ef/bb/17/efbb17fc0cfc2be91f2c913c66676a5f.jpg",
+    title: "Smart Watch",
+    category: "Electronics",
+    price: 4999,
+    rating: 4.3,
+    stock: "Out of Stock",
+  },
+  {
+    id: 4,
+    image: "https://i.pinimg.com/1200x/7e/6d/d8/7e6dd81da415599e4fc10f489ede6c7d.jpg",
+    title: "Backpack",
+    category: "Accessories",
+    price: 1499,
+    rating: 4.0,
+    stock: "In Stock",
+  },
+  {
+    id: 5,
+    image: "https://i.pinimg.com/1200x/3b/1c/4b/3b1c4b4635da8c62809aaf5ef6801b67.jpg",
+    title: "Bluetooth Speaker",
+    category: "Electronics",
+    price: 2499,
+    rating: 4.4,
+    stock: "Out of Stock",
+  },
+  {
+    id: 6,
+    image: "https://i.pinimg.com/1200x/9e/17/32/9e1732104fd3417ca231a4695e7d0e6e.jpg",
+    title: "Sunglasses",
+    category: "Fashion",
+    price: 999,
+    rating: 3.9,
+    stock: "In Stock",
+  },
+];
