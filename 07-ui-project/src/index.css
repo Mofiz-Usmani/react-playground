@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+
+
+.icon {
+    font-size: 80px;
+}
