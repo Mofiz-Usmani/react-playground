@@ -1,0 +1,23 @@
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+}
+.page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #e6cbcb;
+}
+.page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #4a2323;
+}
+

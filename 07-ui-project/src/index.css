@@ -5,3 +5,9 @@
 .icon {
     font-size: 80px;
 }
+
+
+
+#right::-webkit-scrollbar {
+    display: none;
+}

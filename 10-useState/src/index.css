@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #111;
+}
+
+
+button {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: rgb(189, 241, 241);
+  color: black;
+}
+
+h1 {
+  padding: 10px 20px;
+  margin: 20px;
+  width: 230px;
+  text-align: center;
+  align-items: center;
+  background-color: gainsboro;
+  color: black;
+}
+
+
+.heart {
+  text-align: center;
+  margin-top: 280px;
+}
