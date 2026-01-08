@@ -370,3 +370,50 @@ Solution done in ToggleTheme.jsx in components folder
 # Q3. Create a like Button
 
 Solution done in LikeButton.jsx in components folder
+
+
+
+
+
+
+*** 11-useState-advance ***
+
+In App.jsx, when the button is clicked, setNum updates the state asynchronously, so console.log before and after setNum prints the same old value in the same render cycle.
+
+React schedules the state update and re-renders later, which is why the updated value appears only on the next click or render.
+
+If you call setNum(num) with the same value, React does not re-render because the state hasn’t actually changed.
+
+This behavior exists for performance and predictable rendering.
+
+
+
+
+
+
+*** 18-react-router-dom ***
+
+React does not have an inbuilt routing system, so we use react-router-dom for routing.
+
+It is installed using npm i react-router-dom.
+
+React Router DOM is used for client-side routing, where the page does not reload.
+
+It allows navigation in React apps without reloading the page by changing components based on the URL.
+
+This makes the application fast and smooth like a Single Page Application.
+
+The page does not reload, Only the required component changes.
+
+For using brouser router we need to wrap the whole application into it main.jsx 
+like this   <BrowserRouter>   
+                <App />
+            </BrowserRouter>
+
+and also import this - import {BrowserRouter} from 'react-router-dom'
+
+Use : 
+
+To create multiple pages in a React app
+To map URLs to components
+To handle navigation like /login, /about, /profile
