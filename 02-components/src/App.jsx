@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 const App = () => {
   return (
     <>
+    
     <Navbar />
       {/* Calling Card() like a normal JavaScript function 
           → It simply returns JSX (NOT recommended in React)
