@@ -35,8 +35,8 @@ const App = () => {
       color: 'lightgray',
       tag: 'Underbanked'
     }
-
   ]
+  
   return (
     <div>
       <Section1 users={users}/>

@@ -1,0 +1,26 @@
+.toggle {
+  margin-top: 50vh;
+  margin-left: 50vh;
+  height: 60px;
+  min-width: 200px;
+  width: 300px;
+  background-color: #ccc;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.toggle button {
+  height: 60px;
+  width: 150px;
+  border-radius: 100px;
+  border: none;
+  color: black;
+  padding: 0 5px;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.toggle .active {
+  background-color: coral;
+}

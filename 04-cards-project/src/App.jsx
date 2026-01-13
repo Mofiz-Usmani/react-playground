@@ -1,8 +1,10 @@
 import Card from './components/Card'
+import ProductCard from './components/ProductCard';
 
 
 const App = () => {
 
+  // For Card.jsx file
   const jobs = [
   {
     image: "data:image/jpeg;base64,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",
@@ -95,6 +97,27 @@ const App = () => {
 ];
 
 
+// For ProductCard.jsx file
+const products = [
+  {
+    image: 'https://i.pinimg.com/1200x/9d/22/aa/9d22aa7fef06ffd6b90e0436e00cae1d.jpg',
+    title: 'Sweater',
+    category: 'Clothing',
+    rating: 4.5,
+    stock: 'Available',
+    price: 46,
+  },
+  {
+    image: 'https://i.pinimg.com/1200x/a8/4b/7a/a84b7a64dbc0027d9ac0fe2ea44a4dff.jpg',
+    title: 'Sweater',
+    category: 'Clothing',
+    rating: 4.5,
+    stock: 'Available',
+    price: 46,
+  }
+]
+
+
 
   return (
     <div className='parent'>
@@ -103,9 +126,10 @@ const App = () => {
       // It is used as a key so React can identify each Card while rendering.
       // This is okay here because the list is static and does not change. */}
 
-
+      {/* For Cards.jsx file */}
       {jobs.map(function(el, idx) {
         return <div key={idx}>
+          {/* <Card /> is a JSX element used to render a React component. */}
           <Card 
           image={el.image}
           company={el.companyname}
@@ -119,6 +143,24 @@ const App = () => {
         />
         </div>
       })}
+
+
+      {/* For ProductCard.jsx file */}
+      {/* {products.map((el, idx) => {
+        return <div>
+          <ProductCard 
+          image={el.image}
+          title={el.title}
+          category={el.category}
+          rating={el.rating}
+          stock={el.stock}
+          price={el.price}
+          />
+        </div>
+      })} */}
+
+
+
     </div>
   )
 }

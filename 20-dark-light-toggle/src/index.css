@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+.toggle {
+    height: 50px;
+    width: 147px;
+    border-radius: 100px;
+    background-color: rgb(210, 210, 210);
+    padding: 3px 3px;
+}
+
+
+.toggle button {
+    height: 44px;
+    width: 70px;
+    border-radius: 100px;
+    /* background-color: black; */
+    /* color: white; */
+}
+
+.toggle .active {
+    background-color: black;
+    color: white;
+}

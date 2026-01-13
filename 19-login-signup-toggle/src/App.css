@@ -1,0 +1,17 @@
+.toggle {
+  height: 50px;
+  min-width: 200px;
+  width: 300px;
+  background-color: #ccc;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.toggle button {
+  height: 50px;
+  width: 150px;
+  border-radius: 100px;
+  border: none;
+  padding: 0 5px;
+  background: transparent;
+}

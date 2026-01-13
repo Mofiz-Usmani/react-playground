@@ -1,6 +1,4 @@
 import React from 'react'
-import {MoveUpRight} from 'lucide-react'
-import Arrow from './Arrow'
 import HeroText from './HeroText'
 
 

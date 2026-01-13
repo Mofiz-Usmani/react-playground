@@ -1,7 +1,7 @@
 import React from 'react'
 import {Tag} from 'lucide-react'
 import {Star} from 'lucide-react'
-import { products } from '../data/products'
+
 
 const ProductCard = (props) => {
   return (
