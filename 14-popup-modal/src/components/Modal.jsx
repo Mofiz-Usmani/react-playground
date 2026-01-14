@@ -26,12 +26,7 @@ const Modal = ({onClose}) => {
               <input type='password' placeholder='Re-Enter Your Password' className='border border-gray-400 rounded-[5px] p-1 mb-4'></input>
             </form>
 
-
-
             <button className='border border-gray-400 p-1 rounded-[5px] mb-5 bg-black text-white'>Sign Up</button>
-
-
-
 
             <div className='mb-4 text-center'>
               <p>Or with</p>
@@ -42,8 +37,6 @@ const Modal = ({onClose}) => {
               {/* <RiGoogleFill /> */}
               <a>Sign Up with Google</a>
             </div>
-
-
 
             <p className='text-center'>Already have an account?<a className='text-blue-600'>Sign in</a></p>
 
