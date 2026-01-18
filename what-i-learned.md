@@ -151,6 +151,9 @@ This enables Tailwind’s utility classes globally in your project.
 Tailwind CSS is now fully set up
 
 
+<!--!  After setting up tailwind css if not showing suggestions then press Ctr + Shift + P it opens a search bar in that search Developer: Reload Window and click that -->
+
+
 
 
 
@@ -922,3 +925,20 @@ keeps the app fast and smooth
 # One-line takeaway
 
 React Router allows navigation without page reload, making React apps faster and more app-like.
+
+
+
+
+
+
+
+
+
+
+*** 21-notes-app *** 
+
+
+The page isn’t refreshing without using e.preventDefault() and consoles "Form Submitted" each time form is submitted because the form has no action attribute, so the browser has nowhere to send data.
+React still handles the onSubmit event, which is why the console log runs.
+Without a real submission target, the browser doesn’t reload the page.
+Still, using e.preventDefault() is best practice to avoid issues later.
