@@ -1079,3 +1079,47 @@ In JavaScript, when we create copyTask using const copyTask = [...task], it is a
 Even though typeof says "object", copyTask still behaves like an array, so array methods like .push() work normally. To correctly check whether a variable is an array, we should use Array.isArray(copyTask), which returns true.
 
 So the final idea is: arrays are objects in JavaScript, but not all objects are arrays—and for arrays, always use Array.isArray() instead of typeof.
+
+
+
+
+
+
+
+
+
+
+*** 24-useEffect ***
+
+Why useEffect exists (why it’s needed):
+
+React components are meant to just render UI based on state and props. But real apps need to do things outside the UI world — like calling APIs, saving data, talking to the browser, or setting timers. If you put this kind of logic directly in the component body, it will run every time the component renders, which causes bugs, repeated API calls, memory leaks, and bad performance.
+So useEffect was made to handle this extra work safely and at the right time.
+
+You use useEffect because:
+
+You don’t want API calls firing on every render
+You don’t want event listeners stacking up
+You don’t want timers running forever
+You don’t want browser logic mixed into UI rendering
+Without useEffect, React apps become buggy and unstable.
+
+useEffect exists so React can keep rendering clean and predictable, while side effects run at the right time without breaking your app.
+
+It simply means : Render the UI first. Then run the extra work only when needed.
+
+
+
+Timer.jsx : 
+
+In your timer example (without useEffect), the problem happens because the setInterval is written directly inside the component body, and React runs that code every time the component re-renders. First, the component renders with count = 0, and one interval is created. After one second, that interval calls setCount(0 + 1), which updates the state and forces a re-render. During this re-render, the component code runs again and creates a second interval, while the first one is still running. Now both intervals start calling setCount, which causes the number to increase faster. Each re-render adds yet another interval, so very quickly you have many timers running at the same time, all updating the same state. On top of that, each interval “remembers” the count value from the render when it was created, so some intervals always think the count is 0, others think it is 1, others 2, and so on. This stale value problem makes the number jump in weird ways. In simple words, the count itself is not being recreated, but the timer is being recreated again and again on every render, which causes multiple updates per second and makes the app lag or go crazy. This is exactly why useEffect is needed: it lets you create the interval only once, keeps side effects out of the render phase, and allows you to clean up the timer properly so your app behaves normally.
+
+
+
+
+
+
+
+
+
+
