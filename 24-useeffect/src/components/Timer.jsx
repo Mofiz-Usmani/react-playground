@@ -37,10 +37,24 @@ function Timer() {
   };
 
   return (
-    <div>
-      <button onClick={start}>Start</button>
-      <h1>{count}</h1>
-      <button onClick={stop}>Stop</button>
+    <div className="mt-20 ml-170">
+      <button
+        onClick={start}
+        className="h-10 w-27 border-3 border-amber-400 rounded-2xl"
+      >
+        Start
+      </button>
+
+      <h1 className="h-12 w-12 flex justify-center items-center ml-7 mt-3 mb-3 border-3 border-fuchsia-600 rounded-full">
+        {count}
+      </h1>
+
+      <button
+        onClick={stop}
+        className="h-10 w-27 border-3 border-amber-400 rounded-2xl"
+      >
+        Stop
+      </button>
     </div>
   );
 }
