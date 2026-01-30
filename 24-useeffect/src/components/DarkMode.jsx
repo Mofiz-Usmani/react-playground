@@ -1,11 +1,12 @@
 import React from "react";
+import { useState, useEffect } from "react";
 
 function DarkMode() {
-  const [dark, setDark] = React.useState(() => {
+  const [dark, setDark] = useState(() => {
     return localStorage.getItem("darkMode") === "true";
   });
 
-  React.useEffect(() => {
+  useEffect(() => {
     localStorage.setItem("darkMode", dark);
     document.body.style.backgroundColor = dark ? "#111" : "#fff";
     document.body.style.color = dark ? "#fff" : "#000";

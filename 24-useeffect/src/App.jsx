@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Timer from "./components/Timer";
 import DarkMode from "./components/DarkMode";
+import TitleUpdater from "./components/TitleUpdater";
+import APIDataFetcher from "./components/APIDataFetcher";
 
 const App = () => {
   // const [num, setNum] = useState(0);
@@ -11,8 +13,10 @@ const App = () => {
 
   return (
     <div>
-      <Timer />
-      <DarkMode />
+      {/* <Timer /> */}
+      {/* <DarkMode /> */}
+      {/* <TitleUpdater /> */}
+      <APIDataFetcher />
     </div>
   );
 };

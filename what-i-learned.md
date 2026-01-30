@@ -1212,6 +1212,8 @@ In useEffect:
 If you return a function
 React treats it as a cleanup function
 
+The cleanup function returned from useEffect runs whenever the effect is about to re-run or when the component is removed, which is why clearInterval safely stops the timer.
+
 This cleanup function runs:
 
 Before the effect runs again
